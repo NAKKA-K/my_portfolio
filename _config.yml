@@ -1,0 +1,11 @@
+# Main configs
+url: "https://NAKKA-K.githu.io/my_portfolio"
+title: My Portfolio
+
+description: >
+  This site is my portfolio. My work is student and programmer.
+github_username: NAKKA-K
+
+
+# Build settings
+markdown: kramdown
