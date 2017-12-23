@@ -1,6 +1,6 @@
 ---
 layout: default
-title: {{ site.title }}
+title: NAKKA-K Portfolio
 ---
 
 # ポートフォリオ
