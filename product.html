@@ -5,11 +5,26 @@ title: NAKKA-K Portfolio
 
 <div class="text-center">
   <h1 class="jumbotron">Puroductions</h1>
-
-  <div class="list-group">
-    <a href="#" class="list-group-item">List1</a>
-    <a href="#" class="list-group-item">List2</a>
-    <a href="#" class="list-group-item">List3</a>
-  </div>
+  <p>{{ date }}</p>
 
 </div>
+
+  <div class="accbox">
+
+    {% for post in site.posts %}
+      <input type="checkbox" id="label1" class="cssacc" />
+      <label for="label1">{{ post.title }}</label>
+      <div class="accshow"><div class="post">
+        <p><strong>作品名:</strong> {{ post.title}}</p>
+        <hr style="border: inset;">
+        <p><strong>制作期間:</strong> {{ post.period }}</p>
+        <hr style="border: inset;">
+        <p><a href="{{ post.URL }}"><strong>URL:</strong> {{ post.URL }}</a></p>
+        <hr style="border: inset;">
+        <p><strong>内容:</strong></p>
+        {{ post.excerpt }}
+      </div></div>
+    {% endfor %}
+
+  </div>
+
