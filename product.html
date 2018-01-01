@@ -12,8 +12,8 @@ title: NAKKA-K Portfolio
   <div class="accbox">
 
     {% for post in site.posts %}
-      <input type="checkbox" id="label1" class="cssacc" />
-      <label for="label1">{{ post.title }}</label>
+      <input type="checkbox" id="label{{ forloop.index }}" class="cssacc" />
+      <label for="label{{ forloop.index }}">{{ post.title }}</label>
       <div class="accshow"><div class="post">
         <p><strong>作品名:</strong> {{ post.title}}</p>
         <hr style="border: inset;">
