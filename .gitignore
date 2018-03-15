@@ -8,4 +8,4 @@ vendor/bundle
 /.bundle
 
 # rbenv
-.ruby-vesion
+.ruby-version
